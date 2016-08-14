@@ -1,0 +1,10 @@
+{
+    "name": "db",
+    "description": "A crude temporary DB plugin",
+    "version": "0.0.0a",
+    "entry_point": "Garbanzo\\DBPlugin",
+    "configuration": "/config/dbConfig.json",
+    "authors": {
+        "organisation": "Lentejas"
+    }
+}
