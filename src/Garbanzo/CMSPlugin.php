@@ -1,5 +1,5 @@
 <?php
-namespace GarbanzoCMS;
+namespace Garbanzo;
 
 use Garbanzo\Kernel\Interfaces\PluginInterface;
 use Garbanzo\Kernel\Interfaces\ContainerInterface;
@@ -21,10 +21,9 @@ class CMSPlugin implements PluginInterface{
     }
 
     public function getDefinedServices() {
-        $this->configuration = new JsonConfig();
-        $this->configuration->setContainer($this->container);
-        $this->configuration->setConfigRootDirectory('/src/Garbanzo/Core');
-        $this->configuration->loadFile($this->mainConfigFileName);
+        return array(
+
+        );
     }
 
     public function loadDependencies() {

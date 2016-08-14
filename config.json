@@ -2,7 +2,7 @@
     "name": "garbanzo-cms",
     "description": "The CMS package",
     "version": "0.0.0a",
-    "entry_point": "Garbanzo\\CMS\\CMSPlugin",
+    "entry_point": "Garbanzo\\CMSPlugin",
     "configuration": "/config/config.json",
     "authors": {
         "organisation": "Lentejas"
