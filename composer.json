@@ -10,10 +10,15 @@
     ],
     "autoload": {
         "psr-4": {
-            "Garbanzo\\": "src/Garbanzo"
+            "GarbanzoCMS\\": "src/GarbanzoCMS"
         }
     },
     "require": {
-        "php": ">=5.5.0|7.0.*"
-    }
+        "php": ">=5.5.0|7.0.*",
+        "lentejas/garbanzo-core": "dev-master"
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/Lentejas/Garbanzo"
+    }]
 }
