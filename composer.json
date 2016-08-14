@@ -13,7 +13,9 @@
             "Garbanzo\\": "src/Garbanzo"
         }
     },
-    "require": {},
+    "require": {
+        "php": ">=5.5.0|7.0.*"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "master"
