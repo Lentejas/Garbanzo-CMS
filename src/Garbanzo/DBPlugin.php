@@ -5,7 +5,7 @@ use Garbanzo\Kernel\Interfaces\PluginInterface;
 use Garbanzo\Kernel\Interfaces\ContainerInterface;
 use Garbanzo\DB\Services\MySQL;
 
-class CMSPlugin implements PluginInterface{
+class DBPlugin implements PluginInterface{
 
     protected $container;
     protected $configuration;

@@ -20,13 +20,13 @@ class Mysql {
             ->execute($parameters);
     }
 
-    public function get($sql, $parameters, $resultFormat = static::ARRAY_RESULT) {
+    public function get($sql, $parameters, $resultFormat = self::ARRAY_RESULT) {
         return $this->connexion->prepare($sql)
             ->execute($parameters)
             ->fetch($resultFormat);
     }
 
-    public function getAll($sql, $parameters, $resultFormat = static::ARRAY_RESULT) {
+    public function getAll($sql, $parameters, $resultFormat = self::ARRAY_RESULT) {
         return $this->connexion->prepare($sql)
             ->execute($parameters)
             ->fetchAll($resultFormat);
