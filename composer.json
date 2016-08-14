@@ -8,5 +8,15 @@
             "email": "contact@louis-webdesign.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Garbanzo\\": "src/Garbanzo"
+        }
+    },
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
 }
