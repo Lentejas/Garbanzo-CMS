@@ -12,16 +12,13 @@ class Theme {
 
     public function getLayout($layout = 'default') {
         $this->layout = $layout;
-        var_dump($this->plugin);
-        $themeConfig = $this->loadThemeConfiguration("config/themeConfig.json")->getProperties();
-        print_r($themeConfig);
+        $themeConfig = $this->loadThemeConfiguration("themeConfig.json")->getProperties();
+        return file_get_contents($this->plugin->getPluginRoot().$themeConfig->{$themeConfig->current}->path.$this->layout.'.html.php');
     }
 
     protected function loadThemeConfiguration($configFilePath) {
-        $themeConfiguration = new Configuration();
-        $themeConfiguration->setConfigRootDirectory($this->plugin->getPluginRoot());
+        $themeConfiguration = new Configuration($this->plugin->getPluginRoot());
         $themeConfiguration->loadFile($configFilePath);
-        $this->validateRouteFile($themeConfiguration);
         return $themeConfiguration;
     }
 }
