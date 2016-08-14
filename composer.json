@@ -13,5 +13,10 @@
             "Garbanzo\\": "src/Garbanzo"
         }
     },
-    "require": {}
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
 }
