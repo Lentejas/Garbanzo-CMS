@@ -1,0 +1,10 @@
+{
+    "name": "theme",
+    "description": "Manage theme",
+    "version": "0.0.0a",
+    "entry_point": "Garbanzo\\ThemePlugin",
+    "configuration": "/config/themeConfig.json",
+    "authors": {
+        "organisation": "Lentejas"
+    }
+}
