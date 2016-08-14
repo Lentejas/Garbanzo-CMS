@@ -1,6 +1,6 @@
 {
     "name": "lentejas/garbanzo-cms",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
