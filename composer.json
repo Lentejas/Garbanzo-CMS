@@ -1,0 +1,12 @@
+{
+    "name": "lentejas/garbanzo-cms",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Louis Benoist--Foucher",
+            "email": "contact@louis-webdesign.com"
+        }
+    ],
+    "require": {}
+}
