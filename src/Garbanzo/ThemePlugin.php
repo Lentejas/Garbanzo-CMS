@@ -1,10 +1,11 @@
 <?php
 namespace Garbanzo;
 
-use Garbanzo\Kernel\Interfaces\PluginInterface;
+use Garbanzo\Kernel\Definition\Plugin;
 use Garbanzo\Kernel\Interfaces\ContainerInterface;
+use Garbanzo\Theme\Theme;
 
-class ThemePlugin implements PluginInterface{
+class ThemePlugin extends Plugin {
 
     protected $container;
     protected $configuration;

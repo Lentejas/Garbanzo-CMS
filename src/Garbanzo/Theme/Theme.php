@@ -1,12 +1,17 @@
 <?php
-namespace Garbanzo;
+namespace Garbanzo\Theme;
 
 use Garbanzo\Kernel\Configuration;
+use Garbanzo\Kernel\Traits\ServiceCreation;
 
 class Theme {
-    public $layout = 'default';
 
-    public function getLayout($layout = $this->layout) {
+    use ServiceCreation;
+
+    public $layout;
+
+    public function getLayout($layout = 'default') {
+        $this->layout = $layout;
         $themeConfig = $this->loadThemeConfiguration("config/themeConfig.json")->getProperties();
         print_r($themeConfig);
     }
