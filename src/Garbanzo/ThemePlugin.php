@@ -1,24 +1,11 @@
 <?php
 namespace Garbanzo;
 
-use Garbanzo\Kernel\Interfaces\PluginInterface;
+use Garbanzo\Kernel\Definition\Plugin;
 use Garbanzo\Kernel\Interfaces\ContainerInterface;
+use Garbanzo\Theme\Theme;
 
-class ThemePlugin implements PluginInterface{
-
-    protected $container;
-    protected $configuration;
-    protected $mainConfigFileName;
-    protected $namespace;
-
-    public function __construct($name, $mainConfigFileName) {
-        $this->namespace = $name;
-        $this->mainConfigFileName;
-    }
-
-    public function setContainer(ContainerInterface $container) {
-        $this->container = $container;
-    }
+class ThemePlugin extends Plugin {
 
     public function getDefinedServices() {
         return array(
@@ -32,13 +19,5 @@ class ThemePlugin implements PluginInterface{
 
     public function create() {
 
-    }
-
-    public function getServicesNamespace() {
-        return $this->namespace;
-    }
-
-    public function getConfiguration() {
-        return $this->configuration;
     }
 }

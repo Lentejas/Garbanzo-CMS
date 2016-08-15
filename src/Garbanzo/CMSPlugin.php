@@ -17,6 +17,6 @@ class CMSPlugin extends Plugin{
     }
 
     public function create() {
-        echo $this->getPluginRoot();
+        //echo $this->getPluginRoot();
     }
 }
